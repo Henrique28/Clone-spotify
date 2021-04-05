@@ -1,2 +1,4 @@
 # Clone spotify
- pagina treino de bootstrap
+
+ Página feita para testar meus conhecimentos em boostrap, HTML e CSS
+ 
