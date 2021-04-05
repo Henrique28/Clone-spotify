@@ -4,6 +4,7 @@
 
 html, body, #home {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -76,6 +77,10 @@ div a.btn {
     margin: 0px 5px;
 }
 
+#carousel-home .carousel-control-next, #carousel-home .carousel-control-prev {
+    width: 5%;
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
     h1.display-1 {
@@ -84,6 +89,10 @@ div a.btn {
 
     div a.btn {
         margin-bottom: 14px;
+    }
+
+    div a.btn-success{
+        font-size: 18px;
     }
 }
 
@@ -181,16 +190,6 @@ div a.btn {
 
 }
 
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    
-}
-
 
 /* Recursos*/
 
@@ -213,4 +212,169 @@ div a.btn {
 .texto-recursos p {
     color: white;
 }
+
+.rotacionar {
+    
+    padding-left: 80px;
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+}
+
+    /* Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) { 
+        .rotacionar img {
+            display: none;
+        }
+    }
+
+    /* Small devices (landscape phones, 576px and up)*/
+    @media (min-width: 576px) and (max-width: 767.98px) { 
+        .rotacionar img {
+            display: none;
+        } 
+    }
+
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+         .rotacionar{
+            transform: rotate(0);
+            margin-top: 90px;
+            ;
+         }
+
+         .cel {
+            margin-top: 100px;
+         }
+    }
+
+/* Rodapé */
+
+#rodapé {
+
+    background: rgb(0, 0, 0);
+    position: relative;
+    padding: 80px 0 20px 0;
+}
+
+#rodapé .logo img {
+    width: 142px;
+}
+
+#rodapé h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #919496;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#rodapé ul{
+    list-style: none;
+    
+}
+
+#rodapé ul li {
+    padding: 8px 0 ;
+    display: inline;
+    float: right;
+    margin: 0 8px;
+}
+
+#rodapé ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#rodapé ul li a:hover {
+    color: #1fd160;
+}
+
+    /* Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) { 
+        #rodapé .logo {
+            margin-bottom: 15px;
+        }
+
+        #rodapé h4 {
+            margin-top: 40px;
+        }
+
+        #rodapé ul {
+            float: left;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #rodapé ul img {
+
+            width: 45px;
+            height: 45px;
+            margin-top: 80px;
+        }
+        
+    }
+
+    /* Small devices (landscape phones, 576px and up)*/
+    @media (min-width: 576px) and (max-width: 767.98px) { 
+
+        #rodapé .logo {
+            margin-bottom: 20px;
+        }
+
+        #rodapé h4 {
+            margin-top: 50px;
+        }
+
+        #rodapé ul {
+            float: left;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #rodapé ul img {
+
+            width: 45px;
+            height: 45px;
+            margin-top: 80px;
+            
+        }
+        
+
+    }
+
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        
+        #rodapé .logo img {
+            width: 100px;
+        }
+
+        #rodapé h4 {
+            font-size: 12px;            
+        }
+
+        #rodapé ul li {
+            font-size: 14px;
+            margin: 0 20px 0 0;  
+            padding: 8px 10px 8px 0;          
+        }
+
+        #rodapé ul img {
+
+            width: 40px;
+            height: 40px;          
+            
+        }
+
+        #rodapé .redes ul li {
+            margin: 0 2px 0 0;
+        }
+
+    
+
+    }
+
 
