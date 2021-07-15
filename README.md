@@ -1,6 +1,6 @@
 # Clone spotify
 
-### :sound: Recração do anigo site do Spotify
+### :sound: Recreação do antigo site do Spotify
 
 Conteúdo
 =============
